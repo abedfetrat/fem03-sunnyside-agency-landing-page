@@ -61,7 +61,11 @@
     <main>
         <!-- MAIN GRID SECTION -->
         <section class="about flex">
-            <img class="about__photo" src="./images/desktop/image-transform.jpg" alt="">
+            <picture class="about__photo">
+                <source srcset="./images/desktop/image-transform.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-transform.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-transform.jpg" width="720" height="600" alt="">
+            </picture>
             <div>
                 <div class="about__content-container flex">
                     <div class="about__content flow">
@@ -75,7 +79,11 @@
             </div>
         </section>
         <section class="about flex">
-            <img class="about__photo" src="./images/desktop/image-stand-out.jpg" alt="">
+            <picture class="about__photo">
+                <source srcset="./images/desktop/image-stand-out.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-stand-out.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-stand-out.jpg" width="720" height="600" alt="">
+            </picture>
             <div>
                 <div class="about__content-container flex">
                     <div class="about__content flow">
@@ -150,10 +158,26 @@
         </section>
         <!-- PROJECTS -->
         <div class="projects grid">
-            <img src="./images/desktop/image-gallery-milkbottles.jpg" width="720" height="894" alt="Milkbottles">
-            <img src="./images/desktop/image-gallery-orange.jpg" width="720" height="894" alt="Sliced orange">
-            <img src="./images/desktop/image-gallery-cone.jpg" width="720" height="894" alt="Ice Cream Cone">
-            <img src="./images/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" alt="Sugarcubes">
+            <picture>
+                <source srcset="./images/desktop/image-gallery-milkbottles.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-gallery-milkbottles.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-gallery-milkbottles.jpg" width="720" height="894" alt="Milkbottles">
+            </picture>
+            <picture>
+                <source srcset="./images/desktop/image-gallery-orange.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-gallery-orange.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-gallery-orange.jpg" width="720" height="894" alt="Sliced orange">
+            </picture>
+            <picture>
+                <source srcset="./images/desktop/image-gallery-cone.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-gallery-cone.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-gallery-cone.jpg" width="720" height="894" alt="Ice Cream Cone">
+            </picture>
+            <picture>
+                <source srcset="./images/desktop/image-gallery-sugarcubes.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                <source srcset="./images/mobile/image-gallery-sugarcubes.jpg" type="image/jpeg">
+                <img src="./images/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" alt="Sugarcubes">
+            </picture>
         </div>
     </main>
 
