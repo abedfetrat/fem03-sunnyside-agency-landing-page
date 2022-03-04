@@ -38,9 +38,15 @@ ol {
 
 /* Set core root defaults */
 
-html:focus-within {
+html {
     scroll-behavior: smooth;
 }
+
+
+/* html:focus-within {
+    scroll-behavior: smooth;
+}
+ */
 
 
 /* Set core body defaults */
@@ -212,7 +218,8 @@ body {
     background-color: var(--clr-cream-white-hsl);
 }
 
-.contact-btn:hover {
+.contact-btn:hover,
+.contact-btn:focus {
     color: var(--clr-cream-white-hsl);
     background-color: hsl(var(--clr-cream-white) / .25);
 }
@@ -248,7 +255,8 @@ body {
     opacity: .25;
 }
 
-.learn-more-btn:hover::after {
+.learn-more-btn:hover::after,
+.learn-more-btn:focus::after {
     opacity: 1;
 }
 
@@ -619,7 +627,8 @@ body {
     text-decoration: none;
 }
 
-.primary-footer__nav-list a:hover {
+.primary-footer__nav-list a:hover,
+.primary-footer__nav-list a:focus {
     color: var(--clr-white-hsl);
 }
 
@@ -630,7 +639,8 @@ body {
     align-items: center;
 }
 
-.social:hover .social__icon path {
+.social:hover .social__icon path,
+.social a:focus .social__icon path {
     fill: var(--clr-white-hsl);
 }
 
