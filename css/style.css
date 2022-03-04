@@ -306,7 +306,7 @@ body {
 
 @media screen and (max-width: 50rem) {
     .primary-navigation {
-        position: fixed;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 5rem;

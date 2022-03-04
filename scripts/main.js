@@ -4,10 +4,19 @@ const toggle = document.querySelector('.mobile-menu-toggle');
 toggle.addEventListener('click', () => {
     let visible = nav.getAttribute('data-visible');
     if (visible == 'true') {
-        nav.setAttribute('data-visible', 'false');
+        hideMenu();
     } else {
-        nav.setAttribute('data-visible', 'true');
+        showMenu();
     }
+});
+
+/* Close menu when click on navigation links */
+const navLinks = nav.querySelectorAll('a');
+console.log(navLinks);
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        hideMenu();
+    });
 });
 
 /* Also close menu when click outisde */
@@ -16,6 +25,14 @@ document.addEventListener('click', (e) => {
     var isClickInsideNav = nav.contains(e.target);
 
     if (!isClickOnToggle && !isClickInsideNav) {
-        nav.setAttribute('data-visible', 'false');
+        hideMenu();
     }
 })
+
+function showMenu() {
+    nav.setAttribute('data-visible', 'true');
+}
+
+function hideMenu() {
+    nav.setAttribute('data-visible', 'false');
+}
