@@ -500,8 +500,8 @@ span {
 /* Services */
 
 .service {
-    --flow-space: calc(1.7rem * var(--font-scale));
-    padding: 25rem var(--page-side-padd) 3.7em;
+    --flow-space: 1.7em;
+    padding: 25em var(--page-side-padd) 3.7em;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
