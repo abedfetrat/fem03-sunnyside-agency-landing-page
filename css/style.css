@@ -236,7 +236,7 @@ span {
     text-decoration: none;
     color: var(--clr-very-dark-desaturated-blue-hsl);
     background-color: var(--clr-cream-white-hsl);
-    transition: all 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease;
 }
 
 .contact-btn:hover,
@@ -411,19 +411,20 @@ span {
     color: var(--clr-white-hsl);
 }
 
-@keyframes arrow-animation {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(50%);
-    }
-}
-
 .hero__arrow {
     width: 2.25em;
     height: 7.125em;
-    animation: arrow-animation 1s cubic-bezier(1, -0.11, .58, 1) infinite alternate;
+    animation: arrow-animation 1.2s cubic-bezier(.96, 0, .58, 1) .5s infinite alternate;
+}
+
+@keyframes arrow-animation {
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
 }
 
 @media screen and (min-width: 45em) {
