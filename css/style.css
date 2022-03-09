@@ -411,9 +411,19 @@ span {
     color: var(--clr-white-hsl);
 }
 
+@keyframes arrow-animation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50%);
+    }
+}
+
 .hero__arrow {
     width: 2.25em;
     height: 7.125em;
+    animation: arrow-animation 1s cubic-bezier(1, -0.11, .58, 1) infinite alternate;
 }
 
 @media screen and (min-width: 45em) {
