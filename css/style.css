@@ -236,6 +236,7 @@ span {
     text-decoration: none;
     color: var(--clr-very-dark-desaturated-blue-hsl);
     background-color: var(--clr-cream-white-hsl);
+    transition: all 0.15s ease;
 }
 
 .contact-btn:hover,
@@ -273,6 +274,7 @@ span {
     border-radius: 5px;
     background-color: var(--clr-yellow-hsl);
     opacity: .25;
+    transition: opacity 0.15s ease;
 }
 
 .learn-more-btn:hover::after,
@@ -630,6 +632,16 @@ span {
     height: auto;
     object-fit: cover;
     aspect-ratio: 1;
+    transition: transform 0.2s ease;
+}
+
+.project__photo {
+    overflow: hidden;
+}
+
+.project:hover img,
+.project:focus img {
+    transform: scale(1.25);
 }
 
 @media screen and (min-width: 50em) {
@@ -669,6 +681,7 @@ span {
 .primary-footer__nav-list a {
     color: var(--clr-dark-moderate-cyan-hsl);
     text-decoration: none;
+    transition: color 0.15s ease;
 }
 
 .primary-footer__nav-list a:hover,
@@ -686,6 +699,10 @@ span {
 .social__icon {
     width: 1.25em;
     height: 1.25em;
+}
+
+.social__icon path {
+    transition: fill 0.15s ease;
 }
 
 .social:hover .social__icon path,
