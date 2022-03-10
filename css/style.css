@@ -139,17 +139,21 @@ select {
     --page-side-padd: 1.5rem;
 }
 
+@media screen and (min-width: 50em) {
+     :root {
+        --page-side-padd: 3rem;
+    }
+}
+
 @media screen and (min-width: 125em) {
      :root {
         --font-scale: 1.5;
-        --page-side-padd: 2.25rem;
     }
 }
 
 @media screen and (min-width: 187em) {
      :root {
         --font-scale: 2;
-        --page-side-padd: 3rem;
     }
 }
 
@@ -300,7 +304,7 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2em var(--page-side-padd);
+    padding: 2em 1.5em;
     justify-content: space-between;
     align-items: center;
 }
@@ -326,7 +330,7 @@ span {
     display: none;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 49.9375em) {
     .primary-navigation {
         position: absolute;
         left: 50%;
@@ -519,7 +523,7 @@ span {
 .about__content-container {
     width: 100%;
     height: 100%;
-    padding: 4em var(--page-side-padd);
+    padding: 6em var(--page-side-padd);
     justify-content: center;
     align-items: center;
 }
@@ -604,7 +608,7 @@ span {
         --columns: 2;
     }
     .service {
-        padding-top: 0;
+        padding-top: 3.7em;
     }
     .service:nth-of-type(1) {
         background-image: url(../images/desktop/image-graphic-design.jpg);
