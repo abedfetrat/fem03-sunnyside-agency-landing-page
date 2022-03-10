@@ -337,11 +337,14 @@ span {
         padding: 5em 2.5em 3em 2.5em;
         background-color: var(--clr-cream-white-hsl);
         clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 10%);
+        transition: opacity 0.15s ease;
     }
     #header[data-mobile-menu-visible="false"] .primary-navigation {
+        opacity: 0;
         visibility: hidden;
     }
     #header[data-mobile-menu-visible="true"] .primary-navigation {
+        opacity: 1;
         visibility: visible;
     }
     .primary-navigation ul {
@@ -366,11 +369,52 @@ span {
         display: block;
         width: 1.5em;
         height: 1.125em;
+        padding: 0;
         border: none;
-        background-image: url(../images/icon-hamburger.svg);
-        background-size: cover;
-        background-position: center;
         background-color: transparent;
+    }
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .hamburger::before,
+    .hamburger .inner,
+    .hamburger::after {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 0.125em;
+        background-color: #FFF;
+        transition: all 0.15s ease-in-out;
+        ;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+    }
+    .hamburger::before {
+        top: 0;
+    }
+    .hamburger .inner {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .hamburger::after {
+        bottom: 0;
+    }
+    #header[data-mobile-menu-visible="true"] .hamburger::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    #header[data-mobile-menu-visible="true"] .hamburger .inner {
+        opacity: 0;
+    }
+    #header[data-mobile-menu-visible="true"] .hamburger::after {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
     }
 }
 
