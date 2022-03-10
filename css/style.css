@@ -712,7 +712,8 @@ button:focus-visible {
 .projects img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    /* using contain instead of cover because of weird gap */
+    object-fit: contain;
     aspect-ratio: 1;
     transition: transform 0.2s ease;
 }
