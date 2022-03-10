@@ -1,8 +1,9 @@
+const header = document.querySelector('#header');
 const nav = document.querySelector('.primary-navigation');
 const toggle = document.querySelector('.mobile-menu-toggle');
 
 toggle.addEventListener('click', () => {
-    let visible = nav.getAttribute('data-visible');
+    let visible = header.getAttribute('data-mobile-menu-visible');
     if (visible == 'true') {
         hideMenu();
     } else {
@@ -30,9 +31,9 @@ document.addEventListener('click', (e) => {
 })
 
 function showMenu() {
-    nav.setAttribute('data-visible', 'true');
+    header.setAttribute('data-mobile-menu-visible', 'true');
 }
 
 function hideMenu() {
-    nav.setAttribute('data-visible', 'false');
+    header.setAttribute('data-mobile-menu-visible', 'false');
 }
