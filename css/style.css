@@ -180,6 +180,12 @@ span {
     font-size: var(--fs-400);
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 2px dashed #fff;
+    outline-offset: 5px;
+}
+
 
 /* -------------------------------- UTTILLITIES -------------------------------- */
 
@@ -244,7 +250,8 @@ span {
 }
 
 .contact-btn:hover,
-.contact-btn:focus {
+.contact-btn:focus,
+.contact-btn:active {
     color: var(--clr-cream-white-hsl);
     background-color: hsl(var(--clr-cream-white) / .25);
 }
@@ -282,7 +289,8 @@ span {
 }
 
 .learn-more-btn:hover::after,
-.learn-more-btn:focus::after {
+.learn-more-btn:focus::after,
+.learn-more-btn:active::after {
     opacity: 1;
 }
 
@@ -356,6 +364,9 @@ span {
         flex-direction: column;
         align-items: center;
     }
+    .primary-navigation a {
+        outline-color: #000;
+    }
     .primary-navigation a:not(.contact-btn) {
         font-size: var(--fs-500);
         color: var(--clr-dark-grayish-blue-hsl);
@@ -364,7 +375,9 @@ span {
     .primary-navigation .contact-btn {
         background-color: var(--clr-yellow-hsl);
     }
-    .primary-navigation .contact-btn:hover {
+    .primary-navigation .contact-btn:hover,
+    .primary-navigation .contact-btn:focus,
+    .primary-navigation .contact-btn:active {
         color: initial;
         background-color: hsl(var(--clr-yellow) / 0.25);
     }
@@ -704,12 +717,17 @@ span {
     transition: transform 0.2s ease;
 }
 
+.project:focus {
+    outline: none;
+}
+
 .project__photo {
     overflow: hidden;
 }
 
 .project:hover img,
-.project:focus img {
+.project:focus img,
+.project:active img {
     transform: scale(1.25);
 }
 
@@ -754,7 +772,8 @@ span {
 }
 
 .primary-footer__nav-list a:hover,
-.primary-footer__nav-list a:focus {
+.primary-footer__nav-list a:focus,
+.primary-footer__nav-list a:active {
     color: var(--clr-white-hsl);
 }
 
@@ -775,7 +794,8 @@ span {
 }
 
 .social:hover .social__icon path,
-.social a:focus .social__icon path {
+.social a:focus .social__icon path,
+.social a:active .social__icon path {
     fill: var(--clr-white-hsl);
 }
 
