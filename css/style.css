@@ -234,6 +234,7 @@ button:focus-visible {
 
 .logo-wrapper {
     display: inline-block;
+    font-size: initial;
     line-height: 0;
 }
 
@@ -330,7 +331,6 @@ button:focus-visible {
     left: 0;
     width: 100%;
     padding: 2.125em 2.75em;
-    padding: 2em 1.5em;
     justify-content: space-between;
     align-items: center;
 }
