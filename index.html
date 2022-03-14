@@ -30,7 +30,7 @@
                     <span class="inner"></span>
                 </span>
             </button>
-            <nav class="primary-navigation">
+            <nav class="primary-navigation" aria-label="primary navigation">
                 <ul class="flex">
                     <li>
                         <a href="#about">About</a>
@@ -161,36 +161,39 @@
             </div>
         </section>
         <!-- PROJECTS -->
-        <div id="projects" class="projects grid" aria-label="our projects">
-            <a class="project" href="#" aria-label="project 1">
-                <picture class="project__photo">
-                    <source srcset="./images/desktop/image-gallery-milkbottles.jpg" type="image/jpeg" media="(min-width: 50rem)">
-                    <source srcset="./images/mobile/image-gallery-milkbottles.jpg" type="image/jpeg">
-                    <img src="./images/desktop/image-gallery-milkbottles.jpg" width="720" height="894" alt="Milkbottles">
-                </picture>
-            </a>
-            <a class="project" href="#" aria-label="project 2">
-                <picture class="project__photo">
-                    <source srcset="./images/desktop/image-gallery-orange.jpg" type="image/jpeg" media="(min-width: 50rem)">
-                    <source srcset="./images/mobile/image-gallery-orange.jpg" type="image/jpeg">
-                    <img src="./images/desktop/image-gallery-orange.jpg" width="720" height="894" alt="Sliced orange">
-                </picture>
-            </a>
-            <a class="project" href="#" aria-label="project 3">
-                <picture class="project__photo">
-                    <source srcset="./images/desktop/image-gallery-cone.jpg" type="image/jpeg" media="(min-width: 50rem)">
-                    <source srcset="./images/mobile/image-gallery-cone.jpg" type="image/jpeg">
-                    <img src="./images/desktop/image-gallery-cone.jpg" width="720" height="894" alt="Ice Cream Cone">
-                </picture>
-            </a>
-            <a class="project" href="#" aria-label="project 4">
-                <picture class="project__photo">
-                    <source srcset="./images/desktop/image-gallery-sugarcubes.jpg" type="image/jpeg" media="(min-width: 50rem)">
-                    <source srcset="./images/mobile/image-gallery-sugarcubes.jpg" type="image/jpeg">
-                    <img src="./images/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" alt="Sugarcubes">
-                </picture>
-            </a>
-        </div>
+        <section aria-labelledby="projects-title">
+            <h2 id="projects-title" class="sr-only">our projects</h2>
+            <div id="projects" class="projects grid">
+                <a class="project" href="#" title="project 1" aria-label="project 1">
+                    <picture class="project__photo">
+                        <source srcset="./images/desktop/image-gallery-milkbottles.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                        <source srcset="./images/mobile/image-gallery-milkbottles.jpg" type="image/jpeg">
+                        <img src="./images/desktop/image-gallery-milkbottles.jpg" width="720" height="894" alt="Milkbottles">
+                    </picture>
+                </a>
+                <a class="project" href="#" title="project 2" aria-label="project 2">
+                    <picture class="project__photo">
+                        <source srcset="./images/desktop/image-gallery-orange.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                        <source srcset="./images/mobile/image-gallery-orange.jpg" type="image/jpeg">
+                        <img src="./images/desktop/image-gallery-orange.jpg" width="720" height="894" alt="Sliced orange">
+                    </picture>
+                </a>
+                <a class="project" href="#" title="project 3" aria-label="project 3">
+                    <picture class="project__photo">
+                        <source srcset="./images/desktop/image-gallery-cone.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                        <source srcset="./images/mobile/image-gallery-cone.jpg" type="image/jpeg">
+                        <img src="./images/desktop/image-gallery-cone.jpg" width="720" height="894" alt="Ice Cream Cone">
+                    </picture>
+                </a>
+                <a class="project" href="#" title="project 4" aria-label="project 4">
+                    <picture class="project__photo">
+                        <source srcset="./images/desktop/image-gallery-sugarcubes.jpg" type="image/jpeg" media="(min-width: 50rem)">
+                        <source srcset="./images/mobile/image-gallery-sugarcubes.jpg" type="image/jpeg">
+                        <img src="./images/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" alt="Sugarcubes">
+                    </picture>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer id="footer" class="primary-footer flow">
@@ -201,7 +204,7 @@
                     fill="#FFF" fill-rule="nonzero" />
             </svg>
         </a>
-        <nav>
+        <nav aria-label="primary navigation">
             <ul class="primary-footer__nav-list flex">
                 <li>
                     <a href="#about">About</a>
