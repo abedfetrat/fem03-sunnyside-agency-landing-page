@@ -225,12 +225,21 @@ button:focus-visible {
     border: 0;
 }
 
-.zero-line-height {
+
+/* -------------------------------- COMPONENTS -------------------------------- */
+
+
+/* LOGO */
+
+.logo-wrapper {
+    display: inline-block;
     line-height: 0;
 }
 
-
-/* -------------------------------- COMPONENTS -------------------------------- */
+.logo {
+    width: 7.75em;
+    height: 1.5em;
+}
 
 
 /* CONTACT BTN */
@@ -315,11 +324,6 @@ button:focus-visible {
     padding: 2em 1.5em;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 7.75em;
-    height: 1.5em;
 }
 
 .primary-navigation {
@@ -783,6 +787,15 @@ button:focus-visible {
     margin-top: 5em;
     justify-content: center;
     align-items: center;
+}
+
+.social {
+    line-height: 0;
+}
+
+.social a {
+    display: inline-block;
+    height: 100%;
 }
 
 .social__icon {

@@ -32,8 +32,10 @@ document.addEventListener('click', (e) => {
 
 function showMenu() {
     header.setAttribute('data-mobile-menu-visible', 'true');
+    toggle.setAttribute('aria-expanded', 'true');
 }
 
 function hideMenu() {
     header.setAttribute('data-mobile-menu-visible', 'false');
+    toggle.setAttribute('aria-expanded', 'false');
 }
