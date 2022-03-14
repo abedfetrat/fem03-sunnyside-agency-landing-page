@@ -24,14 +24,16 @@ Users should be able to:
 ### Screenshot
 
 Desktop
+
 ![Desktop screenshot](./screenshots/desktop-screenshot.png)
 
 Mobile
-![Mobile screenshot 1](./screenshots/mobile-screenshot.png) ![Mobile screenshot 2](./screenshots/mobile-screenshot2.png)
+
+![Mobile screenshot 1](./screenshots/mobile-screenshot1.png) ![Mobile screenshot 2](./screenshots/mobile-screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/fully-responsive-landing-page-using-css-grid-with-animations-M2RT30BRl)
 - Live Site URL: [Live Site](https://abedfetrat.github.io/fem03-sunnyside-agency-landing-page)
 
 ## My process
