@@ -29,7 +29,7 @@ Desktop
 
 Mobile
 
-![Mobile screenshot 1](./screenshots/mobile-screenshot1.png) ![Mobile screenshot 2](./screenshots/mobile-screenshot2.png)
+![Mobile screenshot 1](./screenshots/mobile-screenshot1.jpg) ![Mobile screenshot 2](./screenshots/mobile-screenshot2.jpg)
 
 ### Links
 
